@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.MProduit.AfficherCategorieController">
+   <children>
+      <Button fx:id="ajouter" layoutX="352.0" layoutY="431.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: #1E90FF;" text="Ajouter" textFill="WHITE" />
+      <Button fx:id="modifier" layoutX="508.0" layoutY="431.0" mnemonicParsing="false" onAction="#modifier" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: #1E90FF;" text="Modifier" textFill="WHITE" />
+      <Button fx:id="supprimer" layoutX="973.0" layoutY="431.0" mnemonicParsing="false" onAction="#supprimer" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: #87CEFA;" text="Supprimer" textFill="WHITE" />
+      <TextField fx:id="rech" layoutX="270.0" layoutY="91.0" prefHeight="25.0" prefWidth="177.0" />
+      <Label layoutX="40.0" layoutY="95.0" text="Chercher une categorie" textFill="WHITE" />
+      <AnchorPane layoutX="508.0" layoutY="138.0" prefHeight="278.0" prefWidth="560.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <TextArea fx:id="description" layoutX="52.0" layoutY="193.0" prefHeight="71.0" prefWidth="218.0" promptText="Description" />
+            <TextField fx:id="nom" layoutX="52.0" layoutY="34.0" prefHeight="25.0" prefWidth="218.0" promptText="Nom" />
+            <ComboBox fx:id="type" layoutX="52.0" layoutY="87.0" prefHeight="25.0" prefWidth="218.0" promptText="Type" />
+            <Button fx:id="image" layoutX="52.0" layoutY="139.0" mnemonicParsing="false" onAction="#image" prefHeight="25.0" prefWidth="218.0" style="-fx-background-color: #1E90FF;" text="Choisir une image" textFill="WHITE" />
+            <BorderPane layoutX="316.0" layoutY="39.0" prefHeight="200.0" prefWidth="200.0">
+               <center>
+                  <ImageView fx:id="imageview" fitHeight="201.0" fitWidth="201.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+      <Button fx:id="retour" layoutX="40.0" layoutY="431.0" mnemonicParsing="false" onAction="#retour" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: #87CEFA;" text="Retour" textFill="WHITE" />
+      <TableView fx:id="tableview" layoutX="40.0" layoutY="138.0" prefHeight="278.0" prefWidth="407.0">
+        <columns>
+          <TableColumn fx:id="id_cat" prefWidth="46.0" text="Id" />
+            <TableColumn fx:id="nom_cat" prefWidth="70.0" text="Nom" />
+          <TableColumn fx:id="type_cat" prefWidth="98.0" text="Type" />
+            <TableColumn fx:id="desc_cat" prefWidth="192.0" text="Description" />
+        </columns>
+      </TableView>
+      <Label fx:id="idE" layoutX="513.0" layoutY="40.0" />
+      <Label fx:id="cheminimage1" layoutX="680.0" layoutY="40.0" />
+      <VBox layoutX="-4.0" prefHeight="61.0" prefWidth="198.0" style="-fx-background-color: #2b2a2a;">
+         <children>
+            <HBox prefHeight="61.0" prefWidth="184.0" style="-fx-background-color: #1E90FF;">
+               <children>
+                  <Label prefHeight="26.0" prefWidth="165.0" text="E - Nursery" textFill="WHITE">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="21.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets top="15.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="178.0" prefHeight="61.0" prefWidth="916.0" style="-fx-background-color: #87CEFA;">
+         <children>
+            <Text fx:id="username" fill="WHITE" layoutX="644.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="147.74804961681366">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+            <Text fx:id="deco" fill="WHITE" layoutX="784.0" layoutY="38.0" onMouseClicked="#deco" strokeType="OUTSIDE" strokeWidth="0.0" text="Deconnexion" wrappingWidth="118.74804961681366">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

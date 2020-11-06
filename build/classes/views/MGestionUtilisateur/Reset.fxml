@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.MGestionUtilisateur.ResetController">
+   <children>
+      <ImageView fitHeight="440.0" fitWidth="690.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../other/img/image/imgnatverte.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="330.0" layoutY="32.0" prefHeight="380.0" prefWidth="307.0" style="-fx-background-radius: 10; -fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="323.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <Label layoutX="53.0" layoutY="52.0" text="Récupérer mon compte" textFill="DARKOLIVEGREEN" AnchorPane.topAnchor="46.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="email" layoutX="42.0" layoutY="190.0" prefHeight="42.0" prefWidth="224.0" promptText="Votre adresse e-mail" AnchorPane.topAnchor="126.0" />
+            <Button layoutX="41.0" layoutY="232.0" mnemonicParsing="false" onAction="#valider" prefHeight="42.0" prefWidth="224.0" style="-fx-background-color: #b88b44;" text="Valider" textFill="#171717" AnchorPane.bottomAnchor="81.0">
+               <effect>
+                  <DropShadow />
+               </effect></Button>
+         </children>
+         <effect>
+            <DropShadow color="#e1e0db" height="35.83" radius="16.6725" width="32.86" />
+         </effect>
+      </AnchorPane>
+      <Button layoutX="65.0" layoutY="209.0" mnemonicParsing="false" onAction="#retour" prefHeight="42.0" prefWidth="175.0" style="-fx-background-color: #b88b44; -fx-border-radius: 10;" text="Retour" textFill="#171717" AnchorPane.bottomAnchor="189.0" AnchorPane.leftAnchor="65.0" AnchorPane.topAnchor="209.0">
+         <effect>
+            <DropShadow />
+         </effect></Button>
+   </children>
+</AnchorPane>

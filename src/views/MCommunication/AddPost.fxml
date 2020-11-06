@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDialog?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXScrollPane?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchor" prefHeight="686.0" prefWidth="917.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.MCommunication.AddPostController">
+   <children>
+      <JFXDialog fx:id="dialog" layoutX="93.0" layoutY="93.0" prefHeight="215.0" prefWidth="424.0" />
+      <JFXTextField fx:id="title" layoutX="595.0" layoutY="201.0" prefHeight="47.0" prefWidth="163.0" promptText="title" />
+      <Pane fx:id="violet" layoutX="76.0" layoutY="53.0" prefHeight="579.0" prefWidth="382.0" style="-fx-background-color: c59ff4;">
+         <effect>
+            <Glow level="0.0" />
+         </effect>
+         <children>
+            <ImageView fitHeight="69.0" fitWidth="208.0" layoutX="100.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../other/img/blog-logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label contentDisplay="CENTER" layoutX="595.0" layoutY="102.0" prefHeight="85.0" prefWidth="204.0" style="-fx-font-family: Georgia;" text="Start a new blog!" textFill="#5e0b52">
+         <font>
+            <Font name="Georgia Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="category" layoutX="595.0" layoutY="262.0" onKeyReleased="#searchCatEvent" prefHeight="58.0" prefWidth="163.0" promptText="category" />
+      <JFXTextField fx:id="slug" layoutX="595.0" layoutY="343.0" prefHeight="47.0" prefWidth="163.0" promptText="slug" />
+      <JFXTextArea fx:id="body" editable="false" layoutX="591.0" layoutY="429.0" onKeyReleased="#createCon" prefHeight="36.0" prefWidth="171.0" promptText="content" />
+      <JFXButton fx:id="addBlogPost" buttonType="RAISED" contentDisplay="CENTER" layoutX="636.0" layoutY="575.0" onAction="#addPostBtn" prefHeight="47.0" prefWidth="171.0" ripplerFill="#a4228f" style="-fx-background-color: #bf2aba;" text="Add Post" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
+         <font>
+            <Font name="Georgia Italic" size="12.0" />
+         </font>
+         <effect>
+            <BoxBlur />
+         </effect>
+      </JFXButton>
+      <JFXScrollPane fx:id="scrollCategory" layoutX="732.0" layoutY="306.0" prefHeight="141.0" prefWidth="163.0" visible="false">
+         <children>
+            <JFXListView fx:id="listViewCat" onMouseClicked="#returnCat" prefHeight="121.0" prefWidth="163.0" />
+         </children>
+      </JFXScrollPane>
+      <Pane fx:id="contentEditor" layoutX="79.0" layoutY="57.0" prefHeight="571.0" prefWidth="492.0" visible="false" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+/*
+ * Empty Stylesheet file.
+ */
+ .barre .text {
+        -fx-strikethrough: true;
+        -fx-text-fill: red;
+    }
+
+    .bnt .button{
+         -fx-background-color: 
+        #000000,
+        linear-gradient(#2682B7, #2682B7),
+        linear-gradient(#2682B7, #2682B7),
+        linear-gradient(#2682B7, #2682B7);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 12 30 12 30;
+    -fx-text-fill: white;
+    -fx-font-size: 19px;
+    -fx-border-color: #2682B7	;
+    }   

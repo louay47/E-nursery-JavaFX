@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="686.0" prefWidth="917.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.MVente.Facture.AfficheFactureController">
+   <children>
+      <Pane prefHeight="686.0" prefWidth="917.0" style="-fx-background-color: #f4fcf5;">
+         <children>
+            <TableView fx:id="tvFacture" layoutX="119.0" layoutY="258.0" prefHeight="371.0" prefWidth="666.0" style="-fx-border-color: #f4fcf5; -fx-background-color: #f4fcf5;" />
+            <Label fx:id="labtot" alignment="CENTER" contentDisplay="CENTER" layoutX="119.0" layoutY="629.0" prefHeight="49.0" prefWidth="666.0" style="-fx-background-color: #78ed9b;">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font></Label>
+            <TextField alignment="CENTER" layoutX="118.0" layoutY="1.0" prefHeight="114.0" prefWidth="666.0" style="-fx-background-color: #78ed9b;" text="Facture">
+               <font>
+                  <Font size="50.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <TextField layoutX="209.0" layoutY="115.0" prefHeight="37.0" prefWidth="172.0" style="-fx-background-color: #f4fcf5;" text="Pepinière Inc." />
+            <TextField layoutX="209.0" layoutY="152.0" prefHeight="37.0" prefWidth="205.0" style="-fx-background-color: #f4fcf5;" text="Adresse : 31, cité el ghazela,  Ariana" />
+            <TextField layoutX="209.0" layoutY="188.0" prefHeight="37.0" prefWidth="172.0" style="-fx-background-color: #f4fcf5;" text="Tél : +21632569874" />
+            <ImageView fitHeight="91.0" fitWidth="172.0" layoutX="118.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../other/img/logo1.png" />
+               </image>
+            </ImageView>
+            <TextField layoutX="212.0" layoutY="221.0" prefHeight="37.0" prefWidth="172.0" style="-fx-background-color: #f4fcf5;" text="Mail : Pepinère.inc@gmail.com" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="238.0" prefWidth="677.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.MMarketing.Promotion.Promotion2Controller">
+   <children>
+      <Pane prefHeight="257.0" prefWidth="704.0" style="-fx-background-color: YELLOW;">
+         <children>
+            <Label layoutX="351.0" layoutY="69.0" prefHeight="17.0" prefWidth="105.0" text="NAME PRO    : " />
+            <Label layoutX="356.0" layoutY="114.0" prefHeight="17.0" prefWidth="94.0" text="PRIX INITIALE" />
+            <Label layoutX="356.0" layoutY="154.0" prefHeight="17.0" prefWidth="113.0" text="PRIX PROMO" />
+            <Label layoutX="356.0" layoutY="199.0" prefHeight="17.0" prefWidth="94.0" text="JUSQU'AU" />
+            <Label fx:id="namePR" layoutX="465.0" layoutY="71.0" prefHeight="17.0" prefWidth="128.0" text="1" />
+            <Label fx:id="prix1PR" layoutX="481.0" layoutY="114.0" prefHeight="17.0" prefWidth="94.0" text="2" textFill="#dd2727" />
+            <Label fx:id="PRIXFIpr" layoutX="472.0" layoutY="156.0" prefHeight="17.0" prefWidth="128.0" text="3" textFill="#1abc3d" />
+            <Label fx:id="DATEFINpr" layoutX="466.0" layoutY="202.0" prefHeight="17.0" prefWidth="105.0" text="4" textFill="#858d14" />
+            <Separator layoutX="-3.0" layoutY="253.0" prefHeight="1.0" prefWidth="716.0" />
+            <ImageView fx:id="bbbb" fitHeight="89.0" fitWidth="159.0" layoutX="351.0" layoutY="78.0">
+               <image>
+                  <Image url="@../../../other/img/1111.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="IMAGpr" fitHeight="221.0" fitWidth="315.0" layoutX="14.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
+            <Label ellipsisString="" layoutX="369.0" layoutY="20.0" prefHeight="43.0" prefWidth="287.0" text="PRODUCT OF THE MONTH" textFill="#b22929" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

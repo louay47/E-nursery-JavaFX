@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="366.0" prefWidth="614.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.MService.Wishlist.ListSimilarController">
+   <children>
+      <Pane prefHeight="564.0" prefWidth="691.0" style="-fx-background-color: #f4fcf5;">
+         <children>
+            <ImageView fx:id="ImageProduit" fitHeight="446.0" fitWidth="337.0" layoutX="34.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="NomProduit" layoutX="435.0" layoutY="163.0" text="s">
+               <font>
+                  <Font name="Comic Sans MS" size="25.0" />
+               </font></Label>
+            <Label fx:id="vendeurproduit" layoutX="435.0" layoutY="299.0" prefHeight="36.0" prefWidth="235.0" text="s">
+               <font>
+                  <Font name="Comic Sans MS" size="25.0" />
+               </font></Label>
+            <Label layoutX="390.0" layoutY="100.0" prefHeight="42.0" prefWidth="299.0" text="Nom produit :">
+               <font>
+                  <Font name="Comic Sans MS" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="390.0" layoutY="245.0" prefHeight="42.0" prefWidth="299.0" text="Nom vendeur :">
+               <font>
+                  <Font name="Comic Sans MS" size="30.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="ajouterwishlistbtn" layoutX="390.0" layoutY="430.0" onAction="#ajoutbtn" style="-fx-background-color: #a5dfff;" text="ajouter au wishlist">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

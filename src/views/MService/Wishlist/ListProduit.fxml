@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="564.0" prefWidth="691.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.MService.Wishlist.ListProduitController">
+   <children>
+      <Pane prefHeight="564.0" prefWidth="691.0">
+         <children>
+            <Label fx:id="NomProduit" layoutX="422.0" layoutY="126.0" text="prod1">
+               <font>
+                  <Font name="Comic Sans MS" size="25.0" />
+               </font></Label>
+            <Label fx:id="dateajoutproduit" layoutX="419.0" layoutY="253.0" text="prod2">
+               <font>
+                  <Font name="Comic Sans MS" size="25.0" />
+               </font></Label>
+            <Label fx:id="vendeurproduit" layoutX="419.0" layoutY="371.0" text="prod3">
+               <font>
+                  <Font name="Comic Sans MS" size="25.0" />
+               </font></Label>
+            <ImageView fx:id="ImageProduit" fitHeight="401.0" fitWidth="331.0" layoutX="62.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="405.0" layoutY="66.0" text="Nom Produit :">
+               <font>
+                  <Font name="Comic Sans MS" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="405.0" layoutY="203.0" text="Date d'ajout :">
+               <font>
+                  <Font name="Comic Sans MS" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="405.0" layoutY="314.0" text="Nom Vendeur :">
+               <font>
+                  <Font name="Comic Sans MS" size="30.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="similarbtn" layoutX="112.0" layoutY="491.0" onAction="#similaraction" style="-fx-background-color: #a5dfff;" text="similaire">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="supprimebtn" layoutX="274.0" layoutY="492.0" onAction="#supprimeraction" style="-fx-background-color: #f79eab;" text="supprimer">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ajoutaupanierbtn" layoutX="485.0" layoutY="488.0" onAction="#ajoutpanieraction" style="-fx-background-color: #a5dfff;" text="ajouter au panier">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

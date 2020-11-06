@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="531.0" prefWidth="916.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.MService.Reclamation.BE.ProfileRController">
+   <children>
+      <BorderPane fx:id="BPane" prefHeight="531.0" prefWidth="916.0">
+         <center>
+            <Pane prefHeight="342.0" prefWidth="407.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="74.0" layoutY="65.0" text="Nom d'utilisateur :">
+                     <font>
+                        <Font name="Oswald Regular" size="14.0" />
+                     </font></Label>
+                  <Label layoutX="74.0" layoutY="122.0" text="Email :">
+                     <font>
+                        <Font name="Oswald Regular" size="14.0" />
+                     </font></Label>
+                  <Label layoutX="74.0" layoutY="170.0" text="Infos :">
+                     <font>
+                        <Font name="Oswald Regular" size="14.0" />
+                     </font></Label>
+                  <Label layoutX="74.0" layoutY="228.0" text="Tél :">
+                     <font>
+                        <Font name="Oswald Regular" size="14.0" />
+                     </font></Label>
+                  <Label layoutX="74.0" layoutY="284.0" text="Localisation :">
+                     <font>
+                        <Font name="Oswald Regular" size="14.0" />
+                     </font></Label>
+                  <Label layoutX="74.0" layoutY="335.0" text="Adresse :">
+                     <font>
+                        <Font name="Oswald Regular" size="14.0" />
+                     </font></Label>
+                  <Label layoutX="74.0" layoutY="389.0" text="Job :">
+                     <font>
+                        <Font name="Oswald Regular" size="14.0" />
+                     </font></Label>
+                  <Label fx:id="UserName" layoutX="135.0" layoutY="92.0" text="Label">
+                     <font>
+                        <Font name="Palatino Linotype" size="14.0" />
+                     </font></Label>
+                  <Label fx:id="Email" layoutX="135.0" layoutY="139.0" text="Label">
+                     <font>
+                        <Font name="Palatino Linotype" size="14.0" />
+                     </font></Label>
+                  <Label fx:id="About" layoutX="135.0" layoutY="187.0" text="Label">
+                     <font>
+                        <Font name="Palatino Linotype" size="14.0" />
+                     </font></Label>
+                  <Label fx:id="PhoneNumber" layoutX="135.0" layoutY="255.0" text="Label">
+                     <font>
+                        <Font name="Palatino Linotype" size="14.0" />
+                     </font></Label>
+                  <Label fx:id="Location" layoutX="135.0" layoutY="307.0" text="Label">
+                     <font>
+                        <Font name="Palatino Linotype" size="14.0" />
+                     </font></Label>
+                  <Label fx:id="Address" layoutX="135.0" layoutY="362.0" text="Label">
+                     <font>
+                        <Font name="Palatino Linotype" size="14.0" />
+                     </font></Label>
+                  <Label fx:id="Job" layoutX="135.0" layoutY="413.0" text="Label">
+                     <font>
+                        <Font name="Palatino Linotype" size="14.0" />
+                     </font></Label>
+                  <Button fx:id="banUser" layoutX="262.0" layoutY="462.0" mnemonicParsing="false" onAction="#banuserAction" prefHeight="43.0" prefWidth="143.0" style="-fx-background-color: #7A9AFF;" text="Bannir Utilisateur">
+                     <font>
+                        <Font name="Arial" size="15.0" />
+                     </font></Button>
+                  <ImageView fitHeight="44.0" fitWidth="48.0" layoutX="830.0" layoutY="14.0" onMouseClicked="#returnaction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../other/img/left-arrow.png" />
+                     </image>
+                  </ImageView>
+                  <Pane fx:id="panelchart" layoutX="405.0" layoutY="67.0" prefHeight="374.0" prefWidth="469.0" />
+                  <Button layoutX="48.0" layoutY="461.0" mnemonicParsing="false" onMouseClicked="#livb" prefHeight="44.0" prefWidth="196.0" style="-fx-background-color: #7A9AFF;" text="Historique des Livraisons">
+                     <font>
+                        <Font name="Arial" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

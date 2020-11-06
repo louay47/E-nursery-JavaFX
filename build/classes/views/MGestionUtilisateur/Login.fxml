@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #e7dbdb;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.MGestionUtilisateur.LoginController">
+   <children>
+      <ImageView fitHeight="440.0" fitWidth="690.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/imgnatverte.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane focusTraversable="true" layoutX="330.0" layoutY="26.0" prefHeight="380.0" prefWidth="312.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10;" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="323.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <TextField fx:id="username" layoutX="38.0" layoutY="130.0" prefHeight="42.0" prefWidth="224.0" promptText="Nom d'utilisateur" AnchorPane.bottomAnchor="212.0" AnchorPane.topAnchor="126.0" />
+            <PasswordField fx:id="password" focusTraversable="false" layoutX="38.0" layoutY="192.0" prefHeight="42.0" prefWidth="224.0" promptText="Mot de passe" AnchorPane.bottomAnchor="150.0" />
+            <Button fx:id="login" layoutX="38.0" layoutY="261.0" mnemonicParsing="false" onAction="#authentification" prefHeight="42.0" prefWidth="224.0" style="-fx-background-color: #b88b44;" text="Se connecter" textFill="#171717" AnchorPane.bottomAnchor="81.0" AnchorPane.topAnchor="261.0">
+               <effect>
+                  <DropShadow />
+               </effect></Button>
+            <Label layoutX="84.0" layoutY="46.0" text="Authentification" textFill="DARKOLIVEGREEN" AnchorPane.topAnchor="46.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="outputlogin" prefHeight="17.0" prefWidth="0.0" />
+            <Label fx:id="mdpoublie" layoutX="95.0" layoutY="321.0" onMouseClicked="#reset" text="Mot de passe oublié ?" textFill="#b88b44" />
+         </children>
+         <effect>
+            <DropShadow color="#a8a5a5" height="41.76" radius="19.6375" width="38.79" />
+         </effect>
+      </AnchorPane>
+      <Button fx:id="login1" layoutX="65.0" layoutY="199.0" mnemonicParsing="false" onAction="#inscription" prefHeight="42.0" prefWidth="179.0" style="-fx-background-color: #b88b44;" text="S'inscrire" textFill="#171717" AnchorPane.bottomAnchor="199.0" AnchorPane.leftAnchor="65.0" AnchorPane.topAnchor="199.0">
+         <effect>
+            <DropShadow />
+         </effect></Button>
+   </children>
+</AnchorPane>

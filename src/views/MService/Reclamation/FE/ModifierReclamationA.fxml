@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="686.0" prefWidth="917.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.MService.Reclamation.FE.ModifierReclamationAController">
+   <children>
+      <BorderPane fx:id="RPane" prefHeight="686.0" prefWidth="917.0" style="-fx-background-color: #f4fcf5;">
+         <center>
+            <Pane prefHeight="460.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="181.0" fitWidth="499.0" layoutX="210.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../other/img/Ten-Steps-to-Giving-Your-Designer-Better-Feedback-01.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="Sujet" layoutX="111.0" layoutY="299.0" promptText="Sujet" style="-fx-background-color: #f4fcf5; -fx-border-color: black;" />
+                  <TextArea fx:id="Description" layoutX="111.0" layoutY="384.0" prefHeight="216.0" prefWidth="557.0" promptText="Description" style="-fx-background-color: #f4fcf5; -fx-border-color: black;" />
+                  <Label layoutX="227.0" layoutY="220.0" text="Autre Reclamation">
+                     <font>
+                        <Font name="Baskerville Old Face" size="25.0" />
+                     </font></Label>
+                  <Button fx:id="SubmitButton" layoutX="746.0" layoutY="462.0" mnemonicParsing="false" onAction="#ModifierR" prefHeight="59.0" prefWidth="88.0" style="-fx-background-color: #a5dfff;" text="modifier" />
+                  <ImageView fitHeight="44.0" fitWidth="52.0" layoutX="54.0" layoutY="56.0" onMouseClicked="#retourimg" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../other/img/left-arrow.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

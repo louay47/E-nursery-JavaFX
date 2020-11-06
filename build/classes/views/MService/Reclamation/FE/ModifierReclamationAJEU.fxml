@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="686.0" prefWidth="917.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.MService.Reclamation.FE.ModifierReclamationAJEUController">
+   <children>
+      <BorderPane fx:id="RPane" prefHeight="686.0" prefWidth="917.0" style="-fx-background-color: #f4fcf5;">
+         <center>
+            <Pane prefHeight="460.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="225.0" layoutY="191.0" text="Reclamation Consernant un(e)">
+                     <font>
+                        <Font name="Baskerville Old Face" size="25.0" />
+                     </font></Label>
+                  <ImageView fitHeight="181.0" fitWidth="499.0" layoutX="210.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../other/img/Ten-Steps-to-Giving-Your-Designer-Better-Feedback-01.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="Rtype" layoutX="538.0" layoutY="191.0" prefHeight="17.0" prefWidth="118.0" text="dd">
+                     <font>
+                        <Font name="Baskerville Old Face" size="25.0" />
+                     </font></Label>
+                  <TextField fx:id="Sujet" alignment="CENTER" layoutX="106.0" layoutY="255.0" prefHeight="28.0" prefWidth="284.0" promptText="Sujet" style="-fx-background-color: #f4fcf5; -fx-border-color: black;" />
+                  <TextField fx:id="NUAreclamer" alignment="CENTER" layoutX="106.0" layoutY="323.0" onMouseClicked="#usertoclaimsearch" prefHeight="25.0" prefWidth="252.0" promptText="clic ici pour choisir le utilisateur a reclamer" style="-fx-background-color: #f4fcf5; -fx-border-color: black;" />
+                  <TextArea fx:id="Description" layoutX="102.0" layoutY="404.0" prefHeight="195.0" prefWidth="577.0" promptText="Description ici" style="-fx-background-color: #f4fcf5; -fx-border-color: black;" />
+                  <Button fx:id="SubmitButton" layoutX="751.0" layoutY="481.0" mnemonicParsing="false" onAction="#ModifierR" prefHeight="62.0" prefWidth="81.0" style="-fx-background-color: #a5dfff;" text="modifier" />
+                  <ImageView fitHeight="55.0" fitWidth="49.0" layoutX="53.0" layoutY="62.0" onMouseClicked="#retourimg" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../other/img/left-arrow.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

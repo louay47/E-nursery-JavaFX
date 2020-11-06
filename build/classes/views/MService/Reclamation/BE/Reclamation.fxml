@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="531.0" prefWidth="916.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.MService.Reclamation.BE.ReclamationController">
+   <children>
+      <BorderPane fx:id="BPaneHH" prefHeight="531.0" prefWidth="916.0">
+         <center>
+            <Pane prefHeight="460.0" prefWidth="640.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Separator layoutX="-3.0" orientation="VERTICAL" prefHeight="460.0" prefWidth="4.0" />
+                  <Label fx:id="TypeList" layoutX="89.0" layoutY="34.0" prefHeight="35.0" prefWidth="114.0" text="-list ">
+                     <font>
+                        <Font name="Oswald Regular" size="20.0" />
+                     </font></Label>
+                  <TableView fx:id="tableview" layoutX="11.0" layoutY="90.0" prefHeight="423.0" prefWidth="705.0" />
+               </children>
+            </Pane>
+         </center>
+         <left>
+            <Pane prefHeight="531.0" prefWidth="185.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="toutbtn" layoutX="19.0" layoutY="77.0" mnemonicParsing="false" onAction="#toutaction" prefHeight="41.0" prefWidth="143.0" style="-fx-background-color: #7A9AFF;" text="Tout">
+                     <font>
+                        <Font name="Arial" size="15.0" />
+                     </font></Button>
+                  <Button fx:id="nonlubtn" layoutX="19.0" layoutY="122.0" mnemonicParsing="false" onAction="#nonluaction" prefHeight="45.0" prefWidth="143.0" style="-fx-background-color: #7A9AFF;" text="Non lu">
+                     <font>
+                        <Font name="Arial" size="15.0" />
+                     </font></Button>
+                  <Button fx:id="lubtn" layoutX="19.0" layoutY="171.0" mnemonicParsing="false" onAction="#luaction" prefHeight="44.0" prefWidth="144.0" style="-fx-background-color: #7A9AFF;" text="Lu">
+                     <font>
+                        <Font name="Arial" size="15.0" />
+                     </font></Button>
+                  <Button disable="true" layoutX="-1.0" layoutY="231.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="186.0" style="-fx-background-color: #7A9AFF;" text="Pour être banni">
+                     <font>
+                        <Font name="Arial" size="15.0" />
+                     </font></Button>
+                  <Button fx:id="importantbtn" layoutX="19.0" layoutY="279.0" mnemonicParsing="false" onAction="#importantaction" prefHeight="45.0" prefWidth="144.0" style="-fx-background-color: #7A9AFF;" text="Important">
+                     <font>
+                        <Font name="Arial" size="15.0" />
+                     </font></Button>
+                  <Button disable="true" layoutY="349.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="186.0" style="-fx-background-color: #7A9AFF;" text="Géré">
+                     <font>
+                        <Font name="Arial" size="15.0" />
+                     </font></Button>
+                  <Button fx:id="poubellebtn" layoutX="20.0" layoutY="404.0" mnemonicParsing="false" onAction="#oubelleaction" prefHeight="47.0" prefWidth="142.0" style="-fx-background-color: #7A9AFF;" text="Poubelle">
+                     <font>
+                        <Font name="Arial" size="15.0" />
+                     </font></Button>
+                  <Label fx:id="newlbl" layoutX="42.0" layoutY="28.0" text="Label">
+                     <font>
+                        <Font name="Consolas" size="15.0" />
+                     </font></Label>
+                  <Label fx:id="toutlbl" layoutX="135.0" layoutY="90.0" prefHeight="17.0" prefWidth="18.0" text="00" />
+                  <Label fx:id="nonlulbl" layoutX="135.0" layoutY="136.0" prefHeight="17.0" prefWidth="19.0" text="00" />
+                  <Label fx:id="lulbl" layoutX="136.0" layoutY="185.0" prefHeight="17.0" prefWidth="17.0" text="00" />
+                  <Label fx:id="importlbl" layoutX="136.0" layoutY="294.0" prefHeight="17.0" prefWidth="24.0" text="00" />
+                  <Label fx:id="poubellbl" layoutX="135.0" layoutY="420.0" text="00" />
+               </children>
+            </Pane>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

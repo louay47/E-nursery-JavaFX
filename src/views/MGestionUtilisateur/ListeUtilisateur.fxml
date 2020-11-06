@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="531.0" prefWidth="916.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.MGestionUtilisateur.ListeUtilisateurController">
+   <children>
+      <BorderPane prefHeight="532.0" prefWidth="915.0">
+         <left>
+            <VBox prefHeight="532.0" prefWidth="235.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane prefHeight="163.0" prefWidth="154.0">
+                     <children>
+                        <Button fx:id="userbtn" layoutX="23.0" layoutY="98.0" mnemonicParsing="false" onAction="#userAction" prefHeight="52.0" prefWidth="195.0" style="-fx-background-color: #7A9AFF;" text="Utilisateur">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="101.0" prefWidth="154.0">
+                     <children>
+                        <Button fx:id="bannebtn" layoutX="24.0" layoutY="12.0" mnemonicParsing="false" onAction="#banneaction" prefHeight="52.0" prefWidth="196.0" style="-fx-background-color: #7A9AFF;" text="Bannée">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="tablevi" layoutX="18.0" layoutY="110.0" prefHeight="406.0" prefWidth="645.0" />
+                  <Label fx:id="lbl" layoutX="50.0" layoutY="45.0" text="Label">
+                     <font>
+                        <Font name="Oswald Regular" size="20.0" />
+                     </font></Label>
+                  <TextField fx:id="search" layoutX="347.0" layoutY="66.0" prefHeight="25.0" prefWidth="314.0" promptText="recherche par nom utilisateur " />
+                  <Separator layoutX="-3.0" layoutY="47.0" orientation="VERTICAL" prefHeight="456.0" prefWidth="0.0" />
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

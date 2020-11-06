@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="531.0" prefWidth="916.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.MService.Reclamation.BE.OpenReclamationController">
+   <children>
+      <BorderPane fx:id="BPaneHH" prefHeight="531.0" prefWidth="916.0">
+         <center>
+            <Pane prefHeight="442.0" prefWidth="714.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="namesenderuser" layoutX="285.0" layoutY="25.0" prefHeight="56.0" prefWidth="196.0" text="namesenderuser">
+                     <font>
+                        <Font name="Consolas Bold Italic" size="20.0" />
+                     </font></Label>
+                  <Label layoutX="86.0" layoutY="106.0" text="Email Adress :">
+                     <font>
+                        <Font name="Oswald Regular" size="14.0" />
+                     </font></Label>
+                  <Separator layoutX="62.0" layoutY="78.0" prefHeight="1.0" prefWidth="824.0" />
+                  <Label layoutX="86.0" layoutY="155.0" text="Subject :">
+                     <font>
+                        <Font name="Oswald Regular" size="14.0" />
+                     </font></Label>
+                  <Label layoutX="86.0" layoutY="210.0" text="Description :">
+                     <font>
+                        <Font name="Oswald Regular" size="14.0" />
+                     </font></Label>
+                  <Label layoutX="84.0" layoutY="282.0" text="Date  :">
+                     <font>
+                        <Font name="Oswald Regular" size="14.0" />
+                     </font></Label>
+                  <Label layoutX="86.0" layoutY="336.0" text="Type Utilisateur reclameur : ">
+                     <font>
+                        <Font name="Oswald Regular" size="14.0" />
+                     </font></Label>
+                  <Label layoutX="85.0" layoutY="391.0" text="Nom utilisateur a été réclamé : ">
+                     <font>
+                        <Font name="Oswald Regular" size="14.0" />
+                     </font></Label>
+                  <Label fx:id="adressmail" layoutX="160.0" layoutY="129.0" text="mail">
+                     <font>
+                        <Font name="Palatino Linotype" size="14.0" />
+                     </font></Label>
+                  <Label fx:id="sujet" layoutX="157.0" layoutY="177.0" text="sujet">
+                     <font>
+                        <Font name="Palatino Linotype" size="14.0" />
+                     </font></Label>
+                  <TextArea fx:id="description" editable="false" layoutX="168.0" layoutY="214.0" prefHeight="60.0" prefWidth="515.0" />
+                  <Label fx:id="date" layoutX="157.0" layoutY="306.0" text="Label">
+                     <font>
+                        <Font name="Palatino Linotype" size="14.0" />
+                     </font></Label>
+                  <Label fx:id="typeReclameur" layoutX="246.0" layoutY="358.0" text="Label">
+                     <font>
+                        <Font name="Palatino Linotype" size="14.0" />
+                     </font></Label>
+                  <Label fx:id="nameReclameeduser" layoutX="248.0" layoutY="419.0" text="Label">
+                     <font>
+                        <Font name="Palatino Linotype" size="14.0" />
+                     </font></Label>
+                  <Button fx:id="setAsimportant" layoutX="70.0" layoutY="464.0" mnemonicParsing="false" onAction="#importantAction" prefHeight="40.0" prefWidth="223.0" style="-fx-background-color: #7A9AFF;" text="Mettre Comme Impprtant">
+                     <font>
+                        <Font name="Arial" size="15.0" />
+                     </font></Button>
+                  <Button fx:id="profileuserreclameur" layoutX="336.0" layoutY="464.0" mnemonicParsing="false" onAction="#profileReclameurAction" prefHeight="40.0" prefWidth="209.0" style="-fx-background-color: #7A9AFF;" text="profile utilisateur reclameur">
+                     <font>
+                        <Font name="Arial" size="15.0" />
+                     </font></Button>
+                  <Button fx:id="profileuserreclamed" layoutX="604.0" layoutY="464.0" mnemonicParsing="false" onAction="#profileReclamedAction" prefHeight="40.0" prefWidth="230.0" style="-fx-background-color: #7A9AFF;" text="profile utilisateur a ete reclamé">
+                     <font>
+                        <Font name="Arial" size="15.0" />
+                     </font></Button>
+                  <Button fx:id="readvoicebtn" layoutX="738.0" layoutY="220.0" mnemonicParsing="false" onAction="#readvoiceaction" prefHeight="49.0" prefWidth="100.0" style="-fx-background-color: #7A9AFF;" text="Lire text">
+                     <font>
+                        <Font name="Arial" size="15.0" />
+                     </font></Button>
+                  <Label layoutX="61.0" layoutY="22.0" prefHeight="62.0" prefWidth="202.0" text="Reclameur nom :">
+                     <font>
+                        <Font name="Consolas Bold Italic" size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="44.0" fitWidth="37.0" layoutX="771.0" layoutY="32.0" onMouseClicked="#backaction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../other/img/left-arrow.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

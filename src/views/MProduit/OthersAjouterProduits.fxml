@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.MProduit.OthersAjouterProduitsController">
+   <children>
+      <Button fx:id="ajouter" layoutX="871.0" layoutY="430.0" mnemonicParsing="false" onAction="#Ajouter" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #1E90FF;" text="Ajouter" textFill="WHITE" />
+      <ImageView fx:id="imageview1" fitHeight="150.0" fitWidth="200.0" layoutX="620.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imageview2" fitHeight="150.0" fitWidth="200.0" layoutX="620.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imageview3" fitHeight="150.0" fitWidth="200.0" layoutX="871.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="UserName" layoutX="938.0" layoutY="29.0" prefHeight="17.0" prefWidth="133.0" />
+      <HBox layoutY="-1.0" onMouseClicked="#home" prefHeight="61.0" prefWidth="184.0" style="-fx-background-color: #1E90FF;">
+         <children>
+            <Label prefHeight="26.0" prefWidth="165.0" text="E - Nursery" textFill="WHITE">
+               <font>
+                  <Font name="Yu Gothic Medium" size="21.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="15.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+         </children>
+      </HBox>
+      <AnchorPane layoutX="184.0" layoutY="-1.0" prefHeight="61.0" prefWidth="916.0" style="-fx-background-color: #87CEFA;">
+         <children>
+            <Text fx:id="username" fill="WHITE" layoutX="523.0" layoutY="38.0" onMouseClicked="#monprofile" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="231.74804961681366">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+            <Text fx:id="deco" fill="WHITE" layoutX="784.0" layoutY="38.0" onMouseClicked="#deco" strokeType="OUTSIDE" strokeWidth="0.0" text="Deconnexion" wrappingWidth="118.74804961681366">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Button fx:id="retour" layoutX="30.0" layoutY="430.0" mnemonicParsing="false" onAction="#retour" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #87CEFA;" text="Retour" textFill="WHITE" />
+      <AnchorPane layoutX="30.0" layoutY="95.0" prefHeight="314.0" prefWidth="575.0" style="-fx-background-color: #ace3ea;">
+         <children>
+            <TextField fx:id="nom" layoutX="42.0" layoutY="77.0" prefHeight="25.0" prefWidth="209.0" promptText="Nom Produit" />
+            <TextArea fx:id="description" layoutX="42.0" layoutY="150.0" prefHeight="113.0" prefWidth="210.0" promptText="Description" />
+            <TextField fx:id="quantite" layoutX="288.0" layoutY="77.0" prefHeight="25.0" prefWidth="209.0" promptText="Quantite" />
+            <Button fx:id="img1" layoutX="288.0" layoutY="157.0" mnemonicParsing="false" onAction="#ajoutImage1" prefHeight="25.0" prefWidth="209.0" style="-fx-background-color: #1E90FF;" text="Image 1" textFill="WHITE" />
+            <Button fx:id="img2" layoutX="288.0" layoutY="196.0" mnemonicParsing="false" onAction="#ajoutImage2" prefHeight="25.0" prefWidth="209.0" style="-fx-background-color: #1E90FF;" text="Image 2" textFill="WHITE" />
+            <Button fx:id="img3" layoutX="288.0" layoutY="236.0" mnemonicParsing="false" onAction="#ajoutImage3" prefHeight="25.0" prefWidth="209.0" style="-fx-background-color: #1E90FF;" text="Image 3" textFill="WHITE" />
+            <ComboBox fx:id="categorie" layoutX="42.0" layoutY="112.0" prefHeight="25.0" prefWidth="209.0" promptText="Categorie" />
+            <TextField fx:id="prix" layoutX="288.0" layoutY="112.0" prefHeight="25.0" prefWidth="209.0" promptText="Prix" />
+            <Label fx:id="cheminimage1" prefHeight="17.0" prefWidth="42.0" textFill="#ace3ea" />
+            <Label fx:id="cheminimage2" prefHeight="17.0" prefWidth="24.0" textFill="#ace3ea" />
+            <Label fx:id="cheminimage3" prefHeight="17.0" prefWidth="42.0" textFill="#ace3ea" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

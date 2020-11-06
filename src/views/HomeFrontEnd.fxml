@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="687.0" prefWidth="1113.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.HomeFrontEndController">
+   <children>
+      <BorderPane fx:id="borderpane" prefHeight="686.0" prefWidth="1113.0">
+         <center>
+            <Pane prefHeight="686.0" prefWidth="917.0" style="-fx-background-color: #c2cec7;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="637.0" fitWidth="879.0" layoutX="52.0" layoutY="21.0" opacity="0.99" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../other/img/homeaa.png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+         </center>
+         <left>
+            <Pane prefHeight="686.0" prefWidth="188.0" style="-fx-background-color: #c2cec7;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="140.0" fitWidth="177.0" layoutX="16.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../other/img/logo1.png" />
+                     </image>
+                  </ImageView>
+                  <VBox layoutY="141.0" prefHeight="551.0" prefWidth="169.0">
+                     <children>
+                        <Pane fx:id="panedhash" onMouseClicked="#dashclik" onMouseEntered="#dashbordentred" onMouseExited="#dashbordexit" prefHeight="50.0" prefWidth="170.0">
+                           <children>
+                              <ImageView fx:id="imgdhash" fitHeight="41.0" fitWidth="41.0" layoutX="11.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../other/img/HomeIcon/admin.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="dashlbl" layoutX="64.0" layoutY="12.0" text="Dashboard">
+                                 <font>
+                                    <Font name="Bell MT Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane onMouseClicked="#shopclik" onMouseEntered="#shopentred" onMouseExited="#shopexit" prefHeight="50.0" prefWidth="170.0">
+                           <children>
+                              <ImageView fx:id="imgshop" fitHeight="41.0" fitWidth="41.0" layoutX="11.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../other/img/HomeIcon/shop.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="shoplbl" layoutX="64.0" layoutY="12.0" text="Shop">
+                                 <font>
+                                    <Font name="Bell MT Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane onMouseClicked="#promoclik" onMouseEntered="#promotionentred" onMouseExited="#promotionexit" prefHeight="50.0" prefWidth="170.0">
+                           <children>
+                              <ImageView fx:id="imgpromotion" fitHeight="41.0" fitWidth="41.0" layoutX="11.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../other/img/HomeIcon/promotion.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="promotionlbl" layoutX="64.0" layoutY="12.0" text="Promotion">
+                                 <font>
+                                    <Font name="Bell MT Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane onMouseClicked="#evenementclik" onMouseEntered="#evenemtionentred" onMouseExited="#evenemtionexit" prefHeight="50.0" prefWidth="170.0">
+                           <children>
+                              <ImageView fx:id="imgevenement" fitHeight="41.0" fitWidth="41.0" layoutX="11.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../other/img/HomeIcon/evenement.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="evenementlbl" layoutX="64.0" layoutY="12.0" text="Evenement">
+                                 <font>
+                                    <Font name="Bell MT Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane onMouseClicked="#blogclik" onMouseEntered="#blogentred" onMouseExited="#blogexit" prefHeight="50.0" prefWidth="170.0">
+                           <children>
+                              <ImageView fx:id="imgblog" fitHeight="41.0" fitWidth="41.0" layoutX="11.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../other/img/HomeIcon/blog.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="bloglbl" layoutX="64.0" layoutY="12.0" text="Blog">
+                                 <font>
+                                    <Font name="Bell MT Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane onMouseClicked="#livclik" onMouseEntered="#livraisonentred" onMouseExited="#livraisonexit" prefHeight="50.0" prefWidth="170.0">
+                           <children>
+                              <ImageView fx:id="imglivraison" fitHeight="41.0" fitWidth="41.0" layoutX="11.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../other/img/HomeIcon/livraison.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="livraisonlbl" layoutX="64.0" layoutY="12.0" text="Livraisons">
+                                 <font>
+                                    <Font name="Bell MT Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="paneavis" onMouseClicked="#avisclik" onMouseEntered="#avisentred" onMouseExited="#avisexit" prefHeight="50.0" prefWidth="170.0">
+                           <children>
+                              <ImageView fx:id="imgavis" fitHeight="41.0" fitWidth="41.0" layoutX="11.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../other/img/HomeIcon/avis.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="avislbl" layoutX="64.0" layoutY="12.0" text="Avis">
+                                 <font>
+                                    <Font name="Bell MT Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane onMouseClicked="#messeclik" onMouseEntered="#messagentred" onMouseExited="#messagexit" prefHeight="50.0" prefWidth="170.0">
+                           <children>
+                              <ImageView fx:id="imgmessage" fitHeight="41.0" fitWidth="41.0" layoutX="11.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../other/img/HomeIcon/message.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="messagelbl" layoutX="64.0" layoutY="12.0" text="Message">
+                                 <font>
+                                    <Font name="Bell MT Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane onMouseClicked="#wishclik" onMouseEntered="#wishlistentred" onMouseExited="#wishlistexit" prefHeight="50.0" prefWidth="170.0">
+                           <children>
+                              <ImageView fx:id="imgwishlist" fitHeight="41.0" fitWidth="41.0" layoutX="11.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../other/img/HomeIcon/wishlist.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="wishlistlbl" layoutX="64.0" layoutY="12.0" text="Wishlist">
+                                 <font>
+                                    <Font name="Bell MT Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane onMouseClicked="#panierclik" onMouseEntered="#panierentred" onMouseExited="#panierexit" prefHeight="50.0" prefWidth="170.0">
+                           <children>
+                              <ImageView fx:id="imgpanier" fitHeight="41.0" fitWidth="41.0" layoutX="11.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../other/img/HomeIcon/panier.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="panierlbl" layoutX="64.0" layoutY="12.0" text="Panier">
+                                 <font>
+                                    <Font name="Bell MT Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </VBox>
+               </children></Pane>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

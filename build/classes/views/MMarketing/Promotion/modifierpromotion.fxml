@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.MMarketing.Promotion.ModifierpromotionController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="nom_promotionn" layoutX="14.0" layoutY="25.0" promptText="nom promotion" />
+            <TextField fx:id="PRIXPROMOO" layoutX="224.0" layoutY="106.0" promptText="prix-promo" />
+            <TextField fx:id="pourc" layoutX="14.0" layoutY="65.0" promptText="pourcentage" />
+            <DatePicker fx:id="datedebutttt" layoutX="225.0" layoutY="25.0" prefHeight="25.0" prefWidth="149.0" promptText="datedebut" />
+            <DatePicker fx:id="datefinnpromo" layoutX="224.0" layoutY="65.0" prefHeight="25.0" prefWidth="149.0" promptText="date fin" />
+            <TextField fx:id="prixdebut" layoutX="14.0" layoutY="106.0" promptText="prix initilae" />
+            <Button fx:id="modifier_ajout" defaultButton="true" layoutX="127.0" layoutY="150.0" mnemonicParsing="false" onAction="#modifier_Promotion" prefHeight="35.0" prefWidth="85.0" text="modifier">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></Button>
+            <ImageView fx:id="image" fitHeight="107.0" fitWidth="174.0" layoutX="424.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

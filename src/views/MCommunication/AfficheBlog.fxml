@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXNodesList?>
+<?import com.jfoenix.controls.JFXScrollPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="686.0" prefWidth="917.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.MCommunication.AfficheBlogController">
+   <children>
+      <BorderPane prefHeight="686.0" prefWidth="917.0">
+         <center>
+            <ScrollPane prefHeight="259.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <content>
+                  <VBox fx:id="vbox" onMouseEntered="#entred" prefHeight="630.0" prefWidth="917.0" />
+               </content>
+            </ScrollPane>
+         </center>
+         <top>
+            <Pane fx:id="filter" prefHeight="53.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXScrollPane fx:id="scrollSearch" layoutX="166.0" layoutY="42.0" prefHeight="237.0" prefWidth="236.0" visible="false">
+                     <children>
+                        <JFXListView fx:id="listSearch" onMouseClicked="#returnPost" prefHeight="155.0" prefWidth="193.0" visible="false" />
+                     </children>
+                  </JFXScrollPane>
+                  <ImageView fx:id="addPost" fitHeight="31.0" fitWidth="33.0" layoutX="866.0" layoutY="18.0" onMouseEntered="#mouseEntred" onMouseExited="#exited" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../other/img/add-circular-button.png" />
+                     </image>
+                  </ImageView>
+                  <JFXNodesList fx:id="nodesList" layoutX="796.0" layoutY="15.0" onMouseClicked="#disableList" prefHeight="0.0" prefWidth="0.0">
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </JFXNodesList>
+                  <ImageView fx:id="filter1" fitHeight="28.0" fitWidth="31.0" layoutX="810.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../other/img/filter-results-button.png" />
+                     </image>
+                  </ImageView>
+                  <JFXScrollPane fx:id="scrollCat" layoutX="669.0" layoutY="53.0" prefHeight="185.0" prefWidth="206.0" visible="false">
+                     <children>
+                        <JFXListView fx:id="catListView" onMouseClicked="#fetchCat" prefHeight="120.0" prefWidth="179.0" style="-fx-background-color: green;" visible="false" />
+                     </children>
+                  </JFXScrollPane>
+                  <JFXTextField fx:id="searchpost" layoutX="66.0" layoutY="14.0" onKeyReleased="#searchP" prefHeight="25.0" prefWidth="325.0" promptText="search posts per title..." />
+                  <ImageView fx:id="searchBTN" fitHeight="23.0" fitWidth="33.0" layoutX="368.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../other/img/698627-icon-111-search-512.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="686.0" prefWidth="917.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.MService.Wishlist.SimilarListController">
+   <children>
+      <BorderPane fx:id="SWPane" prefHeight="686.0" prefWidth="917.0" style="-fx-background-color: #f4fcf5;">
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="207.0" layoutY="253.0" prefHeight="17.0" prefWidth="318.0" text="Selectionner un produit pour l'afficher" />
+               </children>
+            </Pane>
+         </center>
+         <top>
+            <Pane prefHeight="164.0" prefWidth="918.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="122.0" fitWidth="608.0" layoutX="138.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../other/img/Similarlist.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="backimg" fitHeight="34.0" fitWidth="36.0" layoutX="44.0" layoutY="67.0" onMouseClicked="#backaction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../other/img/left-arrow.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </top>
+         <left>
+            <Pane prefHeight="522.0" prefWidth="238.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="SimilarView" layoutX="19.0" layoutY="53.0" onMouseClicked="#OpenProduit" prefHeight="451.0" prefWidth="208.0" />
+                  <TextField fx:id="Searchfield" layoutX="18.0" layoutY="5.0" prefHeight="27.0" prefWidth="208.0" promptText="chercher" style="-fx-background-color: #f4fcf5; -fx-border-color: black;" />
+               </children>
+            </Pane>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

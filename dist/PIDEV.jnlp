@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="PIDEV.jnlp">
+  <information>
+    <title>PIDEV</title>
+    <vendor>mahjoub</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="PIDEV.jar" size="9113942" download="eager" />
+    <jar href="lib\Medusa-8.0.jar" size="1463851" download="eager" />
+    <jar href="lib\activation.jar" size="124332" download="eager" />
+    <jar href="lib\client-1.0-SNAPSHOT-jar-with-dependencies.jar" size="3298814" download="eager" />
+    <jar href="lib\commons-codec-1.9.jar" size="263965" download="eager" />
+    <jar href="lib\commons-io-1.4.jar" size="275220" download="eager" />
+    <jar href="lib\commons-lang-2.6.jar" size="284220" download="eager" />
+    <jar href="lib\commons-logging-1.2.jar" size="61829" download="eager" />
+    <jar href="lib\controlsfx-8.40.11.jar" size="985420" download="eager" />
+    <jar href="lib\controlsfx-8.40.14.jar" size="1215643" download="eager" />
+    <jar href="lib\cron4j-2.2.5.jar" size="36227" download="eager" />
+    <jar href="lib\gson-2.8.2.jar" size="232932" download="eager" />
+    <jar href="lib\httpclient-4.5.2.jar" size="736658" download="eager" />
+    <jar href="lib\httpcore-4.4.4.jar" size="326724" download="eager" />
+    <jar href="lib\itextpdf-5.5.13.jar" size="2320581" download="eager" />
+    <jar href="lib\itextpdf-5.5.9.jar" size="2287148" download="eager" />
+    <jar href="lib\jackson-annotations-2.9.0.jar" size="66519" download="eager" />
+    <jar href="lib\jackson-core-2.9.8.jar" size="325619" download="eager" />
+    <jar href="lib\jackson-databind-2.9.8.jar" size="1347236" download="eager" />
+    <jar href="lib\javafx-dialogs-0.0.2.jar" size="112358" download="eager" />
+    <jar href="lib\javax.mail-1.4.4.jar" size="495041" download="eager" />
+    <jar href="lib\javax.mail-1.6.1.jar" size="654100" download="eager" />
+    <jar href="lib\jfoenix-8.0.1.jar" size="2405715" download="eager" />
+    <jar href="lib\jfoenix-9.0.1.jar" size="2143605" download="eager" />
+    <jar href="lib\jfoenix-9.0.8.jar" size="2419463" download="eager" />
+    <jar href="lib\jfxtras-labs-samples-8.0-r6-SNAPSHOT-all.jar" size="4785232" download="eager" />
+    <jar href="lib\jl1.0.1.jar" size="105363" download="eager" />
+    <jar href="lib\jpedal-trial.jar" size="8118579" download="eager" />
+    <jar href="lib\jpedal_gpl.jar" size="2527561" download="eager" />
+    <jar href="lib\json-simple-1.1.jar" size="16046" download="eager" />
+    <jar href="lib\mail.jar" size="521000" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.45.jar" size="999808" download="eager" />
+    <jar href="lib\restfb-1.32.0.jar" size="1015004" download="eager" />
+    <jar href="lib\spring-security-crypto-3.1.2.release.jar" size="41154" download="eager" />
+    <jar href="lib\stripe-java-5.30.0.jar" size="250107" download="eager" />
+    <jar href="lib\twilio-7.21.0-jar-with-dependencies.jar" size="8861179" download="eager" />
+    <jar href="lib\twilio-7.21.0-javadoc.jar" size="9178434" download="eager" />
+    <jar href="lib\twilio-7.21.0-sources.jar" size="1890531" download="eager" />
+    <jar href="lib\twilio-7.21.0.jar" size="2842507" download="eager" />
+    <jar href="lib\voicerss_tts.jar" size="16533" download="eager" />
+    <jar href="lib\win32-x86-64.jar" size="79421" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="PIDEV" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="pidev.PIDEV"  name="PIDEV" />
+  <update check="always"/>
+</jnlp>
